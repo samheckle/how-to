@@ -24,4 +24,4 @@ It is the ***easiest to build your documentation as you are working through your
    - What had surprising outputs?
 4. Include resources you reached out to for help:
    - For StackOverflow, Youtube tutorials, p5 reference, p5 sketches you looked at: a link
-   - For code-generating prompting tools: A formal MLA or APA citation (as per the syllabus) + link to your chat logs
+   - For code-generating prompting tools: You will include the model, version, and link to your chat logs in your project documentation. You are going to export the chatlog as "export this chat as chatlog.md"
