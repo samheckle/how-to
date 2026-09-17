@@ -1,11 +1,13 @@
 # How to: Write JavaScript Cheatsheet
 
+This is a quick reference for writing basic JavaScript code. Many of the references provided have relevant p5.js explanations. Although typically JavaScript does not have a visual component, p5.js is often a starting point for learning the syntax of JavaScript and has tons of tutorials that detail the concepts here. 
 ## Comment
 
 These are notes embedded inside the code. These are ignored by the computer and designed for developers to write about specific parts of the code. 
 
 ```js
 // double slash is a comment in javascript
+// for quick commenting, use hotkeys
 // ⌘ + / (Mac)
 // CTRL + / (PC)
 ```
@@ -19,13 +21,11 @@ usually we only want comments to be like 60-80 characters long
 */
 ```
 
-Some resources about code comments: MDN Code Style Guide [Writing Comments](https://developer.mozilla.org/en-US/docs/MDN/Writing_guidelines/Code_style_guide/JavaScript#comments)and Coding Train [writing comments in p5.js](https://thecodingtrain.com/tracks/code-programming-with-p5-js/code/1-intro/6-comments)
+Helpful review on code comments: 
+- MDN Code Style Guide: [Writing Comments](https://developer.mozilla.org/en-US/docs/MDN/Writing_guidelines/Code_style_guide/JavaScript#comments) 
+- Coding Train: [writing comments in p5.js](https://thecodingtrain.com/tracks/code-programming-with-p5-js/code/1-intro/6-comments)
 
-tldr;
-- Add comments with intentions of code, not restating code
-- If a comment doesn't start immediately after a new indentation level, add an empty line and then add the comment. It will create a code block, making it obvious what the comment refers to. Also, put your comments on separate lines preceding the code they are referring to.
-- Keep them in one line of 60–80 characters
-
+---
 ## Data Types and Variables
 
 JavaScript variables can hold the following data types:
@@ -38,7 +38,7 @@ JavaScript variables can hold the following data types:
 
 A variable is a named piece of code that holds some data. We make a variable by "declaring" it. We give a value to a variable by "assigning" the variable name a value with a single `=`
 
-```
+```js
 // variable declaration using let
 let myVariable 
 // variable declaration (let) and assignment (=)
@@ -97,6 +97,7 @@ let isNight = false
 Helpful review on basic data types:
 - Coding Train: [Variables](https://thecodingtrain.com/tracks/code-programming-with-p5-js/code/2-variables/2-define-variables)
 - Coding Train: [Incrementing](https://thecodingtrain.com/tracks/code-programming-with-p5-js/code/2-variables/3-incrementation)
+- p5.js Tutorial Blog: [Variables and Change](https://p5js.org/tutorials/variables-and-change/)
 ### Array
 
 Array is a list of data written with square brackets. Arrays are living variables, so you can change the value of them over time. 
@@ -135,7 +136,7 @@ There are also functions on arrays, which follow the same syntax as a property.
 let animals = ["Cat", "Dog", "Giraffe"]
 animals.push("Hamster")
 
-console.log(animals) // prints ["Cat", "Dog", "Giraffe", "Hamster"]
+animals // ["Cat", "Dog", "Giraffe", "Hamster"]
 ```
 
 You can remove items from an array using `splice()`
@@ -176,6 +177,7 @@ pet.isCat = true
 
 Helpful review on objects:
 - javascript.info: [Objects](https://javascript.info/object)
+- p5.js Tutorial Blog: [Data Structure Garden](https://p5js.org/tutorials/data-structure-garden/)
 ### Casting
 
 Casting refers to converting one data type to another.
@@ -191,6 +193,7 @@ let wordFromNumber = parseInt(numberWord) // converts to 15, instead of "15"
 
 This is useful when requesting data from somewhere else and needing it to be in a specific format.
 
+---
 ## Comparisons
 
 `if` statements allow for specific code blocks to be triggered
@@ -275,18 +278,19 @@ if(hasCoffee || hasTea){
 Helpful review on `if` statements:
 - Coding Train: [Conditionals](https://thecodingtrain.com/tracks/code-programming-with-p5-js/code/3-conditionals/1-conditionals)
 - Coding Train: [`if`, `else if`, and `else`](https://thecodingtrain.com/tracks/code-programming-with-p5-js/code/3-conditionals/3-else-if-and-or)
+- p5.js Tutorial Blog: [Conditionals and Interactivity](https://p5js.org/tutorials/conditionals-and-interactivity/)
 
+--- 
 ## Functions
 
 A function is a specific action in code. 
-
 ### Built-in Functions
 
 Some helpful built-in functions, which are functions that are native to JavaScript.
 
 One such function is `console.log()`. When writing front-end javascript, we can open the console via the "Inspector" `Right Click Webpage → Inspect`. 
 
-```
+```js
 let teacher = "Sam"
 console.log(teacher) // prints "Sam" to the console
 ```
@@ -348,6 +352,9 @@ app.get('/test', ()=>{})
 Helpful review on functions:
 - Coding Train: [Function Basics](https://thecodingtrain.com/tracks/code-programming-with-p5-js/code/5-functions/1-basics)
 - Coding Train: [Function Parameters](https://thecodingtrain.com/tracks/code-programming-with-p5-js/code/5-functions/2-arguments)
+- p5.js Tutorial Blog: [Organizing Code with Functions](https://p5js.org/tutorials/organizing-code-with-functions/)
+
+---
 ## Loops
 
 ```js
@@ -378,3 +385,4 @@ Helpful review on loops:
 - Coding Train: [Loops](https://thecodingtrain.com/tracks/code-programming-with-p5-js/code/4-loops/1-while-for)
 - Coding Train: [Arrays and Loops](https://thecodingtrain.com/tracks/code-programming-with-p5-js/code/7-arrays/2-arrays-loops)
 - Coding Train: [Arrays of Objects](https://thecodingtrain.com/tracks/code-programming-with-p5-js/code/7-arrays/3-arrays-objects)
+- p5.js Tutorial Blog: [Repeating with Loops](https://p5js.org/tutorials/repeating-with-loops/)
